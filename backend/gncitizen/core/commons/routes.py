@@ -150,7 +150,7 @@ def get_programs():
             with_geom = json.loads(arg_with_geom.lower())
         else:
             with_geom = False
-        programs = ProgramsModel.query.filter_by(is_active=True).all()
+        programs = ProgramsModel.query.filter_by(is_active=True, module=current_app.config['MODULE_ID']).all()
         count = len(programs)
         features = []
         for program in programs:

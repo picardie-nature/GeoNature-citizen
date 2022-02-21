@@ -29,7 +29,7 @@ MAPBOX_ACCESS_TOKEN = '...'
 DEFAULT_CENTER_LAT = 45
 DEFAULT_CENTER_LONG = 5
 
-
+MODULE_ID = 2 #Si différentes instances sur la même bdd
 
 SESSION_TYPE = 'filesystem'
 SECRET_KEY = 'MyS3cr3tK3y'
